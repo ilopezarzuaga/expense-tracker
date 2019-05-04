@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usuario.expensestracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.users.UsersListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.users.UserDetailActivity"
+            android:parentActivityName=".ui.users.UsersListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.usuario.expensestracker.ui.users.UsersListActivity" />
+        </activity>
+        <!--<activity-->
+            <!--android:name=".ui.test.ItemListActivity"-->
+            <!--android:label="@string/title_item_list" />-->
+        <!--<activity-->
+            <!--android:name=".ui.test.ItemDetailActivity"-->
+            <!--android:label="@string/title_item_detail"-->
+            <!--android:parentActivityName=".ui.test.ItemListActivity">-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value="com.example.usuario.expensestracker.ui.test.ItemListActivity" />-->
+        <!--</activity>-->
+    </application>
+
+</manifest>
